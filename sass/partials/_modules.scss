@@ -1,0 +1,15 @@
+@include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+
+.comingsoon,.error,.privacy{
+    &-s1{
+        background-color: #666!important;
+        background-blend-mode: multiply!important;
+        background-position-x: center!important;
+    }
+}
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
