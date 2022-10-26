@@ -1,4 +1,7 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+@media all and (max-width:991px), all and (orientation: portrait){
+    @include aoa-bg-series($img__classes--v,$img__aoa--v,0,"center","cover","scroll");
+}
 
 .comingsoon,.error,.privacy{
     &-s1{
@@ -17,6 +20,10 @@
         text-shadow: $text__shadow;
     }
 }
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "GochiHand";
+    letter-spacing: 2px;
+}
 header{
     z-index: 10;
 }
@@ -27,8 +34,8 @@ textarea{
     .navbar{
         &-nav{
             backdrop-filter: blur(5px); 
-            background-color: #fff;
-            border: 1px solid #999;
+            background-color: #555;
+            border: 1px solid #222;
             opacity: 0.9;
             padding: 10px;
         }
